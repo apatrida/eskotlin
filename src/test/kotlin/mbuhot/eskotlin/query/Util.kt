@@ -11,6 +11,6 @@ val jsonMapper = ObjectMapper()
 fun json_normalize(str: String) : String = jsonMapper.readTree(str).let { jsonMapper.writeValueAsString(it) }
 
 infix fun <T> T.should_render_as(jsonStr: String) {
-    assertEquals(json_normalize(this.toString()), json_normalize(jsonStr))
+    assertEquals(json_normalize(jsonStr), json_normalize(this.toString()))
 }
 
