@@ -1,3 +1,12 @@
+# 0.8.0-alpha-2
+
+- Add support for named queries (merged from https://github.com/mbuhot/eskotlin/pull/41)
+
+# 0.8.0-alpha-1
+
+- update Kotlin to 1.6.10
+- update Elasticsearch client to 7.10.2 (last OSS version)
+
 # 0.7.0
 
  - Add support for filter and nested aggregations, thanks @nzcoffeem !

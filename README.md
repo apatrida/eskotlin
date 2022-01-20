@@ -1,13 +1,14 @@
-[![Build Status](https://travis-ci.org/mbuhot/eskotlin.svg?branch=master)](https://travis-ci.org/mbuhot/eskotlin)
-
 # ES Kotlin
+
 Elasticsearch Query DSL for Kotlin.
 
 This library aims to minimize the gap between the Elasticsearch JSON query DSL, and the API used when writing kotlin applications.
 This integrates with the existing java API, only providing a nicer syntax to build the queries.
 
-
 # Getting Started
+
+* releases: https://github.com/apatrida/eskotlin/releases
+* Jitpack status: [apatrida/eskotlin](https://jitpack.io/#apatrida/eskotlin/)
 
 ## Gradle
 
@@ -15,12 +16,10 @@ This integrates with the existing java API, only providing a nicer syntax to bui
 repositories {
     mavenCentral()
     ...
-    maven {
-        url  "http://dl.bintray.com/mbuhot/maven"
-   }
+    maven { url 'https://jitpack.io' }
 }
 dependencies {
-    compile 'mbuhot:eskotlin:0.7.0'
+    implementation 'com.github.apatrida:eskotlin:<version>'
     ...
 }
 ```
@@ -32,12 +31,22 @@ See [CHANGELOG](./CHANGELOG.md) for older versions supporting previous elasticse
 Full details on [bintray](https://bintray.com/mbuhot/maven/eskotlin/)
 
 ```xml
-<dependency>
-  <groupId>mbuhot</groupId>
-  <artifactId>eskotlin</artifactId>
-  <version>0.7.0</version>
-  <type>pom</type>
-</dependency>
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+    ...
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.github.apatrida</groupId>
+        <artifactId>eskotlin</artifactId>
+        <version>...version...</version>
+    </dependency>
+    ...
+</dependencies>
 ```
 
 
