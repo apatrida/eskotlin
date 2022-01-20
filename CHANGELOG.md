@@ -1,3 +1,7 @@
+# 0.8.0-alpha-3
+
+- Add span_near and span_term support (merged from https://github.com/mbuhot/eskotlin/pull/39)
+
 # 0.8.0-alpha-2
 
 - Add support for named queries (merged from https://github.com/mbuhot/eskotlin/pull/41)

@@ -7,7 +7,7 @@ plugins {
 }
 
 group 'com.github.apatrida'
-version '0.8.0-alpha-2'
+version '0.8.0-alpha-3'
 
 apply plugin: 'maven-publish'
 
